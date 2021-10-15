@@ -22,7 +22,7 @@ path = os.getcwd()
 def resetToZero():
     if os.path.exists(path + f'/{directoryName}'):
         shutil.rmtree(path + f'/{directoryName}')
-#
+
 
 # Generator for mainTask
 def generateTests():
