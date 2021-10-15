@@ -44,7 +44,7 @@ def main():
     if mode == 1:
         taskMain.main(eyes, isu_number, mouthes, messages, path, directoryName, noses)
     elif mode == 2:
-        AdditionalTaskOne.main()
+        AdditionalTaskOne.main(messages)
     elif mode == 3:
         AdditionalTaskTwo.main()
 
