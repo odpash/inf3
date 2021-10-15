@@ -32,6 +32,5 @@
         "6": "P"
     },
     "isu_number": 13,
-    "directoryName": "sources",
-    "task_2_words": ["Итмо", "Жизнь", "Философия", "Программисты", "Баги", "Код", "Сон", "Жак Фреско"]
+    "directoryName": "sources"
 }
