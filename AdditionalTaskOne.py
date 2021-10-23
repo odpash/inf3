@@ -29,6 +29,7 @@ def generateErrors(cytates):
 def findAndDestroy(cytate):
     return re.sub(r'\b([^\W\d_]+)(\s+\1)+\b', r'\1', re.sub(r'\W+', ' ', cytate).strip(), flags=re.I)
 
+    
 
 
 def main(messages):

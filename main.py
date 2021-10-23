@@ -46,7 +46,7 @@ def main():
     elif mode == 2:
         AdditionalTaskOne.main(messages)
     elif mode == 3:
-        AdditionalTaskTwo.main()
+        AdditionalTaskTwo.main(AdditionalTaskOne.parseCytates())
 
 
 if __name__ == "__main__":
