@@ -17,17 +17,20 @@ def generateErrors(cytates):
         newCytate = []
         c = c.split()
         for i in c:
+            if i == '—':
+                continue
             if random.randint(0, 1) == 1:
-                newCytate.append(i.replace(':', '').replace(';', '').replace(',', '').replace('.', '').replace('!', '').replace('?', ''))
-                if random.randint(0, 1) == 1:
-                    newCytate.append(' ')
+                if i[-1] in (':', ';', ',', '.', '!', '?'):
+                    newCytate.append(i.replace(':', '', -1).replace(';', '', -1).replace(',', '', -1).replace('.', '', -1).replace('!', '', -1).replace('?', '', -1))
+                else:
+                    newCytate.append(i)
             newCytate.append(i)
         ans.append(' '.join(newCytate))
     return ans
 
 
 def findAndDestroy(cytate):
-    return re.sub(r'\b([\w\D]+)(\s+\1)+\b', r'\1', cytate, flags=re.I)
+    return re.sub(r'\b([\%\d\w]+)(\s+\1)+\b', r'\1', cytate, flags=re.I)
 
     
 

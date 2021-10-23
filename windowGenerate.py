@@ -9,7 +9,7 @@ def main(sourceSmile, sourceText, result):
     root = Tk()
     root.geometry('800x1080')
     root.title("Lab #3")
-    label1 = Label(text=sourceSmile, fg="#eee", bg="#333")
+    label1 = Label(text=sourceSmile, fg="#eee", bg="#333", font = ('Arial' , 25))
     label1.pack()
     label2 = Label(text=ansSecond, justify=LEFT)
     label2.place(relx=.1, rely=.2)
