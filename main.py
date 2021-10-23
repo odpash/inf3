@@ -41,12 +41,12 @@ def main():
         else:
             print(colored(messages['error']['input'], 'red'))
 
-    if mode == 1:
+    if mode == 1:   
         taskMain.main(eyes, isu_number, mouthes, messages, path, directoryName, noses)
     elif mode == 2:
         AdditionalTaskOne.main(messages)
     elif mode == 3:
-        AdditionalTaskTwo.main(AdditionalTaskOne.parseCytates())
+        AdditionalTaskTwo.main(AdditionalTaskOne.parseCytates(), messages)
 
 
 if __name__ == "__main__":

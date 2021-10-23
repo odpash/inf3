@@ -2,6 +2,7 @@ import random
 import re
 from termcolor import colored
 import os
+import windowGenerate
 
 
 # Generator for mainTask
@@ -35,3 +36,4 @@ def main(eyes, isu_number, mouthes, messages, path, directoryName, noses):
         f.close()
         print(colored(f'№{i + 1}', 'magenta'), colored(
             messages['ok']['finalMessageMainTask'], 'cyan'), colored(answer, 'green'))
+        windowGenerate.main(messages['ok']['smileInfo'] + ' ' + smile, texts[i], messages['ok']['finalMessageMainTask'] + ' ' + str(answer))
